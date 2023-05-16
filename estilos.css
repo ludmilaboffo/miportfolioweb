@@ -64,3 +64,61 @@ body{
      grid-template-columns: repeat(2,1fr);
      align-items: center;
 }
+
+h1{
+     font-size: 3em;
+     color:#DBB0EC;
+}
+span{
+     color: #22022e;
+}
+.DescargaCV{
+     padding: 10px 20px;
+     background-color:#DBB0EC;
+     border: none;
+     border-radius: 20px;
+     margin-top: 10px;
+     cursor: pointer;
+     box-shadow: 1px 3px 11px -5px rgba(89, 6, 241, 0.69);
+}
+.DescargaCV:hover{
+     background-color: white;
+     box-shadow: none;
+}
+
+.main img{
+     width:300px;
+     border: 7px solid rgba(89, 6, 241, 0.69);
+     border-radius: 10px;
+}
+
+.about{
+     display: grid;
+     grid-template-columns: repeat(10,1fr);
+     width:100vw;
+     align-items: center;
+}
+
+.about-me{
+     width: 70%;
+     grid-column: 1/5;
+}
+.about-info{
+     grid-column: 5/10;
+     padding:2em;
+}
+
+.about-info h2{
+     font-size: 2em;
+     color:#5007E1 ;
+}
+.divider{
+     height: 4px;
+     width:60px;
+     background-color:#22022e;
+     margin-top:2px;
+     margin-bottom: 2em;
+}
+.about p{
+     margin-bottom: 1em;
+}
