@@ -8,15 +8,14 @@
 }
 body{
     overflow-x: hidden;
-    background: #DBB0EC;
-    background: linear-gradient(0deg, #DBB0EC, #5007E1);
+    background: rgb(2,0,36);
+    background: linear-gradient(175deg, rgba(2,0,36,1) 29%, rgba(145,85,255,1) 74%, rgba(192,178,255,0.577468487394958) 100%);
 }
 
 .wrapper {
     position: relative;
-     background: #DBB0EC;
-     background: linear-gradient(0deg, #DBB0EC, #5007E1);
-     color: rgb(248, 246, 255);
+    background: rgb(0,0,0);
+    background: linear-gradient(175deg, rgba(0,0,0,1) 29%, rgba(145,85,255,1) 74%, rgba(192,178,255,0.577468487394958) 100%);  color: rgb(248, 246, 255);
      overflow: hidden;
 }
 
@@ -37,7 +36,7 @@ body{
 }
 
 .menu a{
-     color:#000000;
+     color:#DBB0EC;
      text-decoration: none;
      padding: 10px 20px;
 }
@@ -49,7 +48,9 @@ body{
      background-color:#DBB0EC;
      transition: ease-in .4s;
 }
-
+.brand img{
+    width: 150px;
+}
 
 h1{
      font-size: 3em;
@@ -57,12 +58,6 @@ h1{
 }
 span{
      color: #22022e;
-}
-
-.logo{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo i{
@@ -91,7 +86,7 @@ span{
     height:300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid rgba(131, 84, 207, 0.884);
+    border: 4px double rgba(55, 22, 109, 0.884);
     box-sizing: 5px 7px 25px rgba(0,0,0,0.5);    
 }
 
@@ -105,7 +100,7 @@ span{
     transform: scale(1.2);
 }
 .container-text{
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -123,7 +118,7 @@ span{
     transform: rotate(360deg);
 }
 
-.btnDescargaCV{
+.btnDescargaCV,.form-submit {
      padding: 10px 20px;
      background-color:#DBB0EC;
      border: none;
@@ -138,7 +133,11 @@ span{
      box-shadow: none;
      transform: translateY(-3px);
 }
-
+.form-submit:hover{
+    background-color: darkslateblue;
+    box-shadow: none;
+    transform: translateY(-3px);
+}
 
 .container_card{
     width: 100%;
@@ -189,3 +188,126 @@ span{
 
 }
 
+
+.form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 60px;
+    color:#000000;
+    font-weight: 700;
+}
+.form a i{
+    color:#5007E1;
+    margin-left: 65px;
+}
+.form{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.form h1{
+    text-align: center;
+    margin-top: 0;
+    color:#22022e;
+    margin-bottom: 50px;
+}
+
+.form-input, .form-label, .form-submit{
+    display:block;
+    width: 100%;
+    font-size:1.3em;
+}
+.form-input{
+    padding: 20px;  
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.form-label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -90px;
+    z-index: inherit;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;   
+}
+.form-input:focus{
+    outline:1px solid rgba(0,0,0,0.7);   
+}
+
+.form-input:focus+
+.form-label{
+    margin-top: -140px;
+}
+.fijar{
+    margin-top:-140px;
+}
+
+.claseNombre{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    letter-spacing: 3px;
+    color:#5007E1;
+    font-family: 'Share Tech Mono', monospace;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect : below 1px linear-grandient(trasnparent, #0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%,18%,20%,50.1%,65.1%,80%, 90.1%, 92%{
+        color: #b09fd1;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #5007E1;
+        text-shadow: 0 0 10px #a14fff,
+        0 0 20px #a14fff,
+        0 0 40px #a14fff,
+        0 0 80px #a14fff,
+        0 0 160px #a14fff;
+    }
+}
+.container-nombre{
+    margin:auto;
+    display:table;
+}
+.container-nombre h1{
+    float: left;
+    color: #fff;
+    position:relative;
+}
+
+h1 span{
+    margin-bottom: 10px;
+    position:absolute;
+    right:0;
+    width:0;
+    background:black;
+    border-left: 1px solid #fff;
+
+    animation: maquina 5s infinite alternate steps(18);
+}
+
+@keyframes maquina {
+    from{
+        width:100%;
+    }
+    to{
+        width:0;
+    }
+}

@@ -1,6 +1,12 @@
-const typed = new Typed('.typed',{
-    strings:[
-        <i class="fuente">'Programadora'</i>, 
-        <i class="fuente">'Fullstack'</i>, 
-        <i class="fuente">'Ludmila'</i>]
-});
+let inputs= document.getElementsByClassName('form-input');
+
+    for(let i=0; i< inputs.length; i++){
+        inputs[i].addEventListener('keyup',function(){
+            if(this.value.length>=1){
+                this.nextElementSibling.classList.add('fijar');
+            }
+            else{
+                this.nextElementSibling.classList.remove('fijar');
+            }
+        });
+    }

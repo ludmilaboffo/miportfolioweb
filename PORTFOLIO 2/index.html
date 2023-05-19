@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Porfolio web</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
         <div class="wrapper">
             <header>
-                <div class="logo">               
-                </div>
                 <nav class = "navbar">
                     <div class="brand">
-                        <h2>MI<span>
-                        </span>PORFTOLIO</h2>
+                        <img src="imagenes\LOGO.png" alt="logo">     
                     </div>
                     <ul class= "menu">
-                        <li><a class="Principal" href="#">Inicio</a></li>
-                        <li><a href="#">Sobre mi</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Conctacto</a></li>
+                        <li><a class="Principal" href="#">LINKEDIN</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li><a href="#">C#</a></li>
                     </ul>
                 </nav>
             </header>
@@ -31,8 +28,10 @@
                     <img src="imagenes\fotoperfil.jpg" alt="Profile picture Ludmila Boffo">
                 </div>
                 <div class="container-text">
-                    <h2>¡Hola! Soy</h2>
-                    <h1 class="border">Ludmila</h1>
+                    <div class="container-nombre">
+                        <h1>Ludmila Boffo.<span>&#160;</span></h1>
+                    </div>
+                    <h2 class="claseNombre">SOBRE MI</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quisquam repudiandae perferendis assumenda? Magnam consequatur id nulla earum sunt, maiores necessitatibus deleniti odit mollitia voluptatibus. Possimus esse consequuntur modi architecto.</p>
                     <div class="btn-group">
                         <a download="" href="#">
@@ -40,8 +39,8 @@
                         </a>                    
                     </div>
                     <div class="social">
-                        <a ref="#"><i class="fa-brands fa-linkedin fa-lg"></i> </a>
-                        <a ref="#"><i class="fab fa-github fa-lg"></i> </a>                        
+                        <a href='https://www.linkedin.com/in/ludmila-boffo/'><i class="fa-brands fa-linkedin fa-lg"></i> </a>
+                        <a href='https://github.com/ludmilaboffo'><i class="fab fa-github fa-lg"></i> </a>                        
                     </div>
                 </div>
             </div>      
@@ -50,21 +49,37 @@
                     <img src="imagenes\grancerdo.jpg">
                     <h4>El gran cerdo</h4>
                     <p>Juego de dados realizado en C++</p>
-                    <a href="#">Ver link directo</a>
+                    <a href="https://github.com/ludmilaboffo/El-Gran-Cerdo-juego">Ver link directo</a>
                 </div>
                 <div class="card">
                     <img src="imagenes\64897d581245f498b4e17210dd6c7811.jpg">
                     <h4>Biblioteca "Los amigos de Shakespeare</h4>
                     <p>Sistema de gestión para biblioteca pública realizado en C++ trabajando con archivos</p>
-                    <a href="#">Ver link directo</a>
+                    <a href="https://github.com/ludmilaboffo/Laboratorio-II---Sistema-gestion">Ver link directo</a>
                 </div>
                 <div class="card">
-                    <img src="">
+                    <img src="imagenes\articulos.png">
                     <h4>Sistema de artículos</h4>
                     <p>Proyecto de WinForm que permite la carga de artículos de distinta índole, trabajando con base de datos SQL SERVER y desarrollado en #C</p>
-                    <a href="#">Ver link directo</a>
+                    <a href="https://github.com/ludmilaboffo/tp-winform-ludmilaboffo">Ver link directo</a>
                 </div>   
-            </div>
-        </div>        
+            </div>           
+            <form  class="form" action="https://formsubmit.co/5d28f724898f417c29836d11c7c84b80" method="POST" autocomplete="off">
+                <h1>¡Contactame!</h1>
+                <input type="text" class="form-input" name="Nombre">
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" class="form-input" name="Email">
+                <label for="" class="form-label">Email</label>
+                <input type="text" class="form-input" name="Telefono">
+                <label for="" class="form-label">Telefono (opcional)</label>
+                <input type="text" class="form-input"name="Mensaje">
+                <label for="" class="form-label">Mensaje</label>                  
+                <input type="submit" class="form-submit">
+                <a href="#"><i class="fa fa-envelope"></i>ludmilabboffo@gmail.com</a>  
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>  
+        <script src="main.js"> </script>              
 </body>
 </html>
